@@ -1,4 +1,6 @@
 FROM node:10.6
 
-COPY ./package.json /srv/package.json
-RUN composer install --prefer-dist --optimize-autoloader
+WORKDIR /srv
+COPY package.json /srv
+RUN npm install
+COPY . /srv
