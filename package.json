@@ -2,15 +2,6 @@
   "name": "docker_node",
   "version": "3.0.0",
   "private": true,
-  "scripts": {
-    "sass": "node-sass -o /var/www/php-sources/orm/drupal/modules/pcs/Resources/css /var/www/php-sources/orm/drupal/modules/pcs/Resources/scss --recursive --output-style expanded --source-comments true",
-    "sass-watch": "npm run sass && npm run sass -- --watch",
-    "minify": "postcss /var/www/php-sources/orm/drupal/modules/pcs/Resources/css/ --replace --watch --poll --config postcss.config.js",
-    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --colors --hide-modules  --config=node_modules/laravel-mix/setup/webpack.config.js ",
-    "dev-watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --colors --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod-watch": "NODE_ENV=production node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
   "description": "Setup node environment",
   "author": "s.voronuk",
   "license": "MIT",
